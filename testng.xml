@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.Reports.Report"></listener>
+	</listeners>
+
+<!-- <test thread-count="2" name="Test1">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Tests.LoginTest">
+				<methods>
+					<include name="Login" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+	
+	<test thread-count="2" name="Test2">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes">
+				<methods>
+					<include name="MedicalCentreTypes" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- <test thread-count="2" name="Test3">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Tests.TC_002_DoctorManagement_DoctorTypes">
+				<methods>
+					<include name="DoctorTypes" />
+
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+</suite> <!-- Suite -->
