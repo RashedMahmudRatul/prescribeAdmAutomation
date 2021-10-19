@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tests.TC001_MedicalCenterTypes">
+      <class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes">
         <methods>
-          <include name="f"/>
+          <include name="login"/>
+          <include name="copy"/>
           <include name="broswerConfig"/>
+          <include name="MedicalCentreTypes"/>
         </methods>
-      </class> <!-- com.Tests.TC001_MedicalCenterTypes -->
+      </class> <!-- com.Tests.TC001_MedicalCenter_MedicalCenterTypes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

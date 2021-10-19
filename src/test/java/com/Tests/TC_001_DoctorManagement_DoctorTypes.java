@@ -20,11 +20,11 @@ import org.testng.annotations.Test;
 
 import com.Common.BaseClass;
 
-public class TC001_MedicalCenter_MedicalCenterTypes extends BaseClass{
+public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
   
   @Test(priority = -1)
 
-	public void MedicalCentreTypes() throws InterruptedException, IOException {
+	public void DoctorTypes() throws InterruptedException, IOException {
 	  readConfig();
 		String path = "E:\\Automation\\copied\\TEST DATA.xlsx";
 		File file = new File(path);

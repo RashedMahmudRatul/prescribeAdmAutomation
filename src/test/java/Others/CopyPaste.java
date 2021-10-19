@@ -10,8 +10,8 @@ public class CopyPaste {
 	public static void copyFile() 
 			 throws IOException{
 		
-		String Spath = "E:\\Automation\\Sorce\\READ.xlsx";
-		String Dpath = "E:\\Automation\\copied\\READ2.xlsx";
+		String Spath = "E:\\Automation\\Sorce\\TEST DATA.xlsx";
+		String Dpath = "E:\\Automation\\copied\\TEST DATA.xlsx";
 		
 		File from = new File(Spath);
 		File to = new File(Dpath) ;

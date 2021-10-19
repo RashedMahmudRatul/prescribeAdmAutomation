@@ -9,31 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,845</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test2</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">283</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test3</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">36</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">2</th><th class="num">0</th><th class="num">0</th><th class="num">319</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.Tests.TC001_MedicalCenter_MedicalCenterTypes</td><td><a href="#m0">MedicalCentreTypes</a></td><td rowspan="1">1634552408620</td><td rowspan="1">39032</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.Tests.TC001_MedicalCenter_MedicalCenterTypes</td><td><a href="#m0">broswerConfig</a></td><td rowspan="1">1634647533485</td><td rowspan="1">-1634647533485</td></tr><tr class="skippedeven"><td><a href="#m1">close</a></td><td rowspan="1">1634647533526</td><td rowspan="1">-1634647533526</td></tr><tr class="skippedeven"><td><a href="#m2">login</a></td><td rowspan="1">1634647533505</td><td rowspan="1">-1634647533505</td></tr><tr><th colspan="4">Test2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Tests.TC001_MedicalCenter_MedicalCenterTypes</td><td><a href="#m3">MedicalCentreTypes</a></td><td rowspan="1">1634647533509</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test3 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2</td><td><a href="#m4">copy</a></td><td rowspan="1">1634647533213</td><td rowspan="1">22</td></tr><tr><th colspan="4">Test3 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2</td><td><a href="#m5">broswerConfig</a></td><td rowspan="1">1634647533921</td><td rowspan="1">-1634647533921</td></tr><tr class="skippedeven"><td><a href="#m6">close</a></td><td rowspan="1">1634647533941</td><td rowspan="1">-1634647533941</td></tr><tr class="skippedeven"><td><a href="#m7">login</a></td><td rowspan="1">1634647533927</td><td rowspan="1">-1634647533927</td></tr><tr><th colspan="4">Test3 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2</td><td><a href="#m8">MedicalCentreTypes</a></td><td rowspan="1">1634647533935</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test2</h2><h3 id="m0">com.Tests.TC001_MedicalCenter_MedicalCenterTypes#MedicalCentreTypes</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=94.0.4606.81)
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-KHBPI04&apos;, ip: &apos;192.168.0.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:11357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 43a23ac19218f4c84a43b98354865882
-*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/div/div[1]/ul/li[1]/a}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-	at com.Tests.TC001_MedicalCenter_MedicalCenterTypes.MedicalCentreTypes(TC001_MedicalCenter_MedicalCenterTypes.java:68)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m0">com.Tests.TC001_MedicalCenter_MedicalCenterTypes#broswerConfig</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Tests.TC001_MedicalCenter_MedicalCenterTypes#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Tests.TC001_MedicalCenter_MedicalCenterTypes#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.Tests.TC001_MedicalCenter_MedicalCenterTypes#MedicalCentreTypes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test3</h2><h3 id="m4">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2#copy</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: E:\Automation\copied\TEST DATA.xlsx (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:291)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:234)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:184)
+	at org.apache.commons.io.FileUtils.doCopyFile(FileUtils.java:1123)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1076)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1028)
+	at Others.CopyPaste.copyFile(CopyPaste.java:19)
+	at com.Common.BaseClass.copy(BaseClass.java:31)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2#broswerConfig</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.Tests.TC001_MedicalCenter_MedicalCenterTypes2#MedicalCentreTypes</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: E:\Automation\copied\TEST DATA.xlsx (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:291)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:234)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:184)
+	at org.apache.commons.io.FileUtils.doCopyFile(FileUtils.java:1123)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1076)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1028)
+	at Others.CopyPaste.copyFile(CopyPaste.java:19)
+	at com.Common.BaseClass.copy(BaseClass.java:31)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
