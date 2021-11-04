@@ -18,7 +18,7 @@
 		</classes>
 	</test>  -->
 	
-	<test thread-count="2" name="Test2">
+<!-- 	<test thread-count="2" name="Test2">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes">
@@ -28,14 +28,56 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->	
+	
+	<!-- <test thread-count="2" name="Test4">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Tests.TC_001_DoctorManagement_DoctorTypes">
+				<methods>
+					<include name="DoctorTypes" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+	
+
+	
+<!-- <test thread-count="2" name="Test5">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Tests.TC_002_DoctorManagement_Doctors">
+				<methods>
+					<include name="Doctor" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+	
+	
+	<!-- <test thread-count="2" name="Test5">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Tests.TC_002_DoctorManagement_Doctors">
+				<methods>
+					<include name="Doctor" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+	
+	
+
 	
 		<test thread-count="2" name="Test3">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes2">
+			<class name="com.Tests.TC_002_DoctorManagement_Specializations">
 				<methods>
-					<include name="MedicalCentreTypes" />
+					<include name="Specializations" />
 
 				</methods>
 			</class>
@@ -53,4 +95,7 @@
 			</class>
 		</classes>
 	</test> -->
+	
+	
+	
 </suite> <!-- Suite -->

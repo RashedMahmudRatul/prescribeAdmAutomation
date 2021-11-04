@@ -4,32 +4,18 @@
   <listeners>
     <listener class-name="com.Reports.Report"/>
   </listeners>
-  <test thread-count="5" name="Test2(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes">
-        <methods>
-          <include name="close"/>
-          <include name="login"/>
-          <include name="copy"/>
-          <include name="broswerConfig"/>
-          <include name="MedicalCentreTypes"/>
-        </methods>
-      </class> <!-- com.Tests.TC001_MedicalCenter_MedicalCenterTypes -->
-    </classes>
-  </test> <!-- Test2(failed) -->
   <test thread-count="5" name="Test3(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes2">
+      <class name="com.Tests.TC_002_DoctorManagement_Specializations">
         <methods>
+          <include name="Specializations"/>
           <include name="close"/>
           <include name="login"/>
           <include name="copy"/>
-          <include name="MedicalCentreTypes"/>
           <include name="broswerConfig"/>
         </methods>
-      </class> <!-- com.Tests.TC001_MedicalCenter_MedicalCenterTypes2 -->
+      </class> <!-- com.Tests.TC_002_DoctorManagement_Specializations -->
     </classes>
   </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

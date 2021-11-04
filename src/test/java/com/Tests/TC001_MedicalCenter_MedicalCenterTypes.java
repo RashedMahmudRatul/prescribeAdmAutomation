@@ -26,7 +26,7 @@ public class TC001_MedicalCenter_MedicalCenterTypes extends BaseClass{
 
 	public void MedicalCentreTypes() throws InterruptedException, IOException {
 	  readConfig();
-		String path = "E:\\Automation\\copied\\TEST DATA.xlsx";
+		String path = prop.getProperty("Coppied");
 		File file = new File(path);
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
@@ -94,7 +94,7 @@ public class TC001_MedicalCenter_MedicalCenterTypes extends BaseClass{
 						cell.setCellType(CellType.STRING);
 						cell.setCellValue(sMsg);
 						
-						driver.findElement(By.xpath("/html/body/div[2]/div/div[6]/button[1]")).sendKeys(Keys.ENTER);
+						driver.findElement(By.xpath(prop.getProperty("cmctSuccessAlertOk"))).sendKeys(Keys.ENTER);
 						
 					}
 					
@@ -112,7 +112,7 @@ public class TC001_MedicalCenter_MedicalCenterTypes extends BaseClass{
 						cell.setCellType(CellType.STRING);
 						cell.setCellValue(dupMsg);
 						
-						driver.findElement(By.xpath("/html/body/div[2]/div/div[6]/button[1]")).sendKeys(Keys.ENTER);
+						driver.findElement(By.xpath(prop.getProperty("cmctSuccessAlertOk"))).sendKeys(Keys.ENTER);
 						
 					}
 					

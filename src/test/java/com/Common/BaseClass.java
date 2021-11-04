@@ -24,7 +24,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass extends CopyPaste {
 	public static WebDriver driver;
-	public Properties prop;
+	public static Properties prop;
 
 	@BeforeSuite
 	public void copy() throws IOException {
@@ -49,7 +49,7 @@ public class BaseClass extends CopyPaste {
 			// driver = new ChromeDriver();
 		}
 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 	}
 	@BeforeMethod
@@ -67,6 +67,7 @@ public class BaseClass extends CopyPaste {
 	
 	@AfterMethod
 		public void close() {
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 			driver.close();
 		}
 

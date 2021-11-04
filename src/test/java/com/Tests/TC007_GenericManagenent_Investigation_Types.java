@@ -20,17 +20,17 @@ import org.testng.annotations.Test;
 
 import com.Common.BaseClass;
 
-public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
+public class TC007_GenericManagenent_Investigation_Types extends BaseClass{
   
   @Test(priority = -1)
 
-	public void DoctorTypes() throws InterruptedException, IOException {
+	public void Types() throws InterruptedException, IOException {
 	  readConfig();
 		String path = prop.getProperty("Coppied");
 		File file = new File(path);
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheet = wb.getSheet("MedicalCenterType");
+		XSSFSheet sheet = wb.getSheet("Investigation_Types");
 
 		XSSFRow row = null;
 		XSSFCell cell = null;
@@ -56,17 +56,17 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 					name=cell.getStringCellValue();
 				}
 			} 
-				// go to doctor type page
-				driver.findElement(By.xpath(prop.getProperty("dmBtn"))).click();
+				// go to Investigation_Types page
+				driver.findElement(By.xpath(prop.getProperty("mcBtn"))).click();
 				Thread.sleep(100);
-				driver.findElement(By.xpath(prop.getProperty("dtBtn"))).click();
-				// press on create doctor type
-				driver.findElement(By.xpath(prop.getProperty("cdtBtn"))).click();
+				driver.findElement(By.xpath(prop.getProperty("mctBtn"))).click();
+				// press on create Investigation_Types
+				driver.findElement(By.xpath(prop.getProperty("cmctBtn"))).click();
 				// send data to modal and press submit
 
-				driver.findElement(By.xpath(prop.getProperty("cdtName"))).sendKeys(name);
+				driver.findElement(By.xpath(prop.getProperty("cmctName"))).sendKeys(name);
 				driver.findElement(
-						By.xpath(prop.getProperty("Submit")))
+						By.xpath(prop.getProperty("cmctSubmit")))
 						.click();
 				Thread.sleep(1000);
 
@@ -74,8 +74,8 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 				try {
 					
 					// Sucess Alert
-					String sMsg = driver.findElement(By.xpath(prop.getProperty("SuccessAlert"))).getText();
-					String dupMsg = driver.findElement(By.xpath(prop.getProperty("SuccessAlert"))).getText();
+					String sMsg = driver.findElement(By.xpath(prop.getProperty("cmctSuccessAlert"))).getText();
+					String dupMsg = driver.findElement(By.xpath(prop.getProperty("cmctSuccessAlert"))).getText();
 					
 					Boolean sAlert = sMsg.contains("All Records Saved!");
 					Boolean dupAlert = dupMsg.contains("The name has already been taken.");
@@ -94,7 +94,7 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 						cell.setCellType(CellType.STRING);
 						cell.setCellValue(sMsg);
 						
-						driver.findElement(By.xpath(prop.getProperty("SuccessAlertOk"))).sendKeys(Keys.ENTER);
+						driver.findElement(By.xpath(prop.getProperty("cmctSuccessAlertOk"))).sendKeys(Keys.ENTER);
 						
 					}
 					
@@ -112,7 +112,7 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 						cell.setCellType(CellType.STRING);
 						cell.setCellValue(dupMsg);
 						
-						driver.findElement(By.xpath(prop.getProperty("SuccessAlertOk"))).sendKeys(Keys.ENTER);
+						driver.findElement(By.xpath(prop.getProperty("cmctSuccessAlertOk"))).sendKeys(Keys.ENTER);
 						
 					}
 					
@@ -141,12 +141,11 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 					cell = row.createCell(3);
 					cell.setCellType(CellType.STRING);
 					cell.setCellValue(timeStamp);
-				 
+				
 					
 					cell = row.createCell(4);
 					cell.setCellType(CellType.STRING);
 					cell.setCellValue(validationMessage);
-					continue;
 					}
 					else {
 						result = "Failed";

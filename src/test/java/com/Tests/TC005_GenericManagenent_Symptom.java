@@ -20,17 +20,17 @@ import org.testng.annotations.Test;
 
 import com.Common.BaseClass;
 
-public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
+public class TC005_GenericManagenent_Symptom extends BaseClass{
   
   @Test(priority = -1)
 
-	public void DoctorTypes() throws InterruptedException, IOException {
+	public void Symptom() throws InterruptedException, IOException {
 	  readConfig();
-		String path = prop.getProperty("Coppied");
+		String path =  prop.getProperty("Coppied");
 		File file = new File(path);
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheet = wb.getSheet("MedicalCenterType");
+		XSSFSheet sheet = wb.getSheet("CreateSymptom");
 
 		XSSFRow row = null;
 		XSSFCell cell = null;
@@ -56,18 +56,16 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 					name=cell.getStringCellValue();
 				}
 			} 
-				// go to doctor type page
-				driver.findElement(By.xpath(prop.getProperty("dmBtn"))).click();
+				// go to Symptom type page
+				driver.findElement(By.xpath(prop.getProperty("gmBtn"))).click();
 				Thread.sleep(100);
-				driver.findElement(By.xpath(prop.getProperty("dtBtn"))).click();
-				// press on create doctor type
-				driver.findElement(By.xpath(prop.getProperty("cdtBtn"))).click();
+				driver.findElement(By.xpath(prop.getProperty("symptomBtn"))).click();
+				// press on create Symptom
+				driver.findElement(By.xpath(prop.getProperty("createBtn"))).click();
 				// send data to modal and press submit
 
-				driver.findElement(By.xpath(prop.getProperty("cdtName"))).sendKeys(name);
-				driver.findElement(
-						By.xpath(prop.getProperty("Submit")))
-						.click();
+				driver.findElement(By.xpath(prop.getProperty("Name"))).sendKeys(name);
+				driver.findElement(By.xpath(prop.getProperty("Submit"))).click();
 				Thread.sleep(1000);
 
 				
@@ -141,7 +139,7 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 					cell = row.createCell(3);
 					cell.setCellType(CellType.STRING);
 					cell.setCellValue(timeStamp);
-				 
+				
 					
 					cell = row.createCell(4);
 					cell.setCellType(CellType.STRING);
