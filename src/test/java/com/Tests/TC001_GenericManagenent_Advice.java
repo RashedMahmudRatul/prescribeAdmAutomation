@@ -43,7 +43,7 @@ public class TC001_GenericManagenent_Advice extends BaseClass{
 //		char c = (char) (r.nextInt(26) + 'a');
 //		System.out.println(sheet.getLastRowNum());
 
-		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+		for (int i = 1; i <= sheet.getLastRowNum(); i++) { 
 			row = sheet.getRow(i);
 			if (row != null) {
 				cell = row.getCell(1);
@@ -78,7 +78,7 @@ public class TC001_GenericManagenent_Advice extends BaseClass{
 					String dupMsg = driver.findElement(By.xpath(prop.getProperty("SuccessAlert"))).getText();
 					
 					Boolean sAlert = sMsg.contains("All Records Saved!");
-					Boolean dupAlert = dupMsg.contains("The name has already been taken.");
+					Boolean dupAlert = dupMsg.contains("This data already exists");
 					
 					if (sAlert == true) {
 						result = "PASS";

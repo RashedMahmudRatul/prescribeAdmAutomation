@@ -30,7 +30,7 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 		File file = new File(path);
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheet = wb.getSheet("MedicalCenterType");
+		XSSFSheet sheet = wb.getSheet("DoctorType");
 
 		XSSFRow row = null;
 		XSSFCell cell = null;
@@ -78,7 +78,7 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 					String dupMsg = driver.findElement(By.xpath(prop.getProperty("SuccessAlert"))).getText();
 					
 					Boolean sAlert = sMsg.contains("All Records Saved!");
-					Boolean dupAlert = dupMsg.contains("The name has already been taken.");
+					Boolean dupAlert = dupMsg.contains("The description has already been taken.");
 					
 					if (sAlert == true) {
 						result = "PASS";
@@ -126,7 +126,7 @@ public class TC_001_DoctorManagement_DoctorTypes extends BaseClass{
 				
 				catch (Exception e) {
 					 
-					String validationMessage = driver.findElement(By.name("name")).getAttribute("validationMessage");
+					String validationMessage = driver.findElement(By.xpath("//*[@id=\"description\"]")).getAttribute("validationMessage");
 					String sms=validationMessage;
 					boolean isError = sms.equals("Please fill out this field.");
 					

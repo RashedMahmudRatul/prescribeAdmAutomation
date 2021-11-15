@@ -8,66 +8,18 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">47</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,010</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test4</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">18,164</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test5</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29,743</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">67,917</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Tests.TC003_GenericManagenent_Followups</td><td><a href="#m0">broswerConfig</a></td><td rowspan="1">1636026075673</td><td rowspan="1">-1636026075673</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.Tests.TC003_GenericManagenent_Followups</td><td><a href="#m1">close</a></td><td rowspan="1">1636026075702</td><td rowspan="1">-1636026075702</td></tr><tr class="skippedeven"><td><a href="#m2">login</a></td><td rowspan="1">1636026075694</td><td rowspan="1">-1636026075694</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Tests.TC003_GenericManagenent_Followups</td><td><a href="#m3">MedicalCentreTypes</a></td><td rowspan="1">1636026075697</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Tests.TC001_MedicalCenter_MedicalCenterTypes</td><td><a href="#m0">MedicalCentreTypes</a></td><td rowspan="1">1636981562205</td><td rowspan="1">13662</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test4 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Tests.TC_001_DoctorManagement_DoctorTypes</td><td><a href="#m1">DoctorTypes</a></td><td rowspan="1">1636981581292</td><td rowspan="1">13119</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test5 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Tests.TC_002_DoctorManagement_Specializations</td><td><a href="#m2">Specializations</a></td><td rowspan="1">1636981599624</td><td rowspan="1">24600</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.Tests.TC003_GenericManagenent_Followups#broswerConfig</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeClass on method broswerConfig but has not been marked @Optional or defined
-in C:\Users\USER\AppData\Local\Temp\testng-eclipse--1841537430\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:268)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.Tests.TC003_GenericManagenent_Followups#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.Tests.TC003_GenericManagenent_Followups#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.Tests.TC003_GenericManagenent_Followups#MedicalCentreTypes</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeClass on method broswerConfig but has not been marked @Optional or defined
-in C:\Users\USER\AppData\Local\Temp\testng-eclipse--1841537430\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:268)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m0">com.Tests.TC001_MedicalCenter_MedicalCenterTypes#MedicalCentreTypes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test4</h2><h3 id="m1">com.Tests.TC_001_DoctorManagement_DoctorTypes#DoctorTypes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test5</h2><h3 id="m2">com.Tests.TC_002_DoctorManagement_Specializations#Specializations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

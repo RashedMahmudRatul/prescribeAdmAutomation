@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.Reports.Report"/>
   </listeners>
-  <test thread-count="5" name="Test3(failed)">
+  <test thread-count="5" name="Test5(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.Tests.TC_002_DoctorManagement_Specializations">
@@ -17,5 +17,5 @@
         </methods>
       </class> <!-- com.Tests.TC_002_DoctorManagement_Specializations -->
     </classes>
-  </test> <!-- Test3(failed) -->
+  </test> <!-- Test5(failed) -->
 </suite> <!-- Failed suite [Suite] -->
