@@ -1,71 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-15T19:05:55 BDT" name="Suite" finished-at="2021-11-15T19:07:04 BDT" duration-ms="68364">
+  <suite started-at="2021-11-29T19:31:49 BDT" name="Suite" finished-at="2021-11-29T19:32:39 BDT" duration-ms="49659">
     <groups>
     </groups>
-    <test started-at="2021-11-15T19:05:55 BDT" name="Test2" finished-at="2021-11-15T19:06:15 BDT" duration-ms="20010">
-      <class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes">
-        <test-method is-config="true" signature="broswerConfig(java.lang.String)[pri:0, instance:com.Tests.TC001_MedicalCenter_MedicalCenterTypes@4d5b6aac]" started-at="2021-11-15T19:05:56 BDT" name="broswerConfig" finished-at="2021-11-15T19:05:58 BDT" duration-ms="2441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- broswerConfig -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.Tests.TC001_MedicalCenter_MedicalCenterTypes@4d5b6aac]" started-at="2021-11-15T19:05:58 BDT" name="login" finished-at="2021-11-15T19:06:02 BDT" duration-ms="3597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="MedicalCentreTypes()[pri:-1, instance:com.Tests.TC001_MedicalCenter_MedicalCenterTypes@4d5b6aac]" started-at="2021-11-15T19:06:02 BDT" name="MedicalCentreTypes" finished-at="2021-11-15T19:06:15 BDT" duration-ms="13662" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MedicalCentreTypes -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.Tests.TC001_MedicalCenter_MedicalCenterTypes@4d5b6aac]" started-at="2021-11-15T19:06:15 BDT" name="close" finished-at="2021-11-15T19:06:15 BDT" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.Tests.TC001_MedicalCenter_MedicalCenterTypes -->
-    </test> <!-- Test2 -->
-    <test started-at="2021-11-15T19:06:16 BDT" name="Test4" finished-at="2021-11-15T19:06:34 BDT" duration-ms="18164">
-      <class name="com.Tests.TC_001_DoctorManagement_DoctorTypes">
-        <test-method is-config="true" signature="broswerConfig(java.lang.String)[pri:0, instance:com.Tests.TC_001_DoctorManagement_DoctorTypes@22ef9844]" started-at="2021-11-15T19:06:16 BDT" name="broswerConfig" finished-at="2021-11-15T19:06:17 BDT" duration-ms="1260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- broswerConfig -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.Tests.TC_001_DoctorManagement_DoctorTypes@22ef9844]" started-at="2021-11-15T19:06:17 BDT" name="login" finished-at="2021-11-15T19:06:21 BDT" duration-ms="3716" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="DoctorTypes()[pri:-1, instance:com.Tests.TC_001_DoctorManagement_DoctorTypes@22ef9844]" started-at="2021-11-15T19:06:21 BDT" name="DoctorTypes" finished-at="2021-11-15T19:06:34 BDT" duration-ms="13119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DoctorTypes -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.Tests.TC_001_DoctorManagement_DoctorTypes@22ef9844]" started-at="2021-11-15T19:06:34 BDT" name="close" finished-at="2021-11-15T19:06:34 BDT" duration-ms="57" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.Tests.TC_001_DoctorManagement_DoctorTypes -->
-    </test> <!-- Test4 -->
-    <test started-at="2021-11-15T19:06:34 BDT" name="Test5" finished-at="2021-11-15T19:07:04 BDT" duration-ms="29743">
-      <class name="com.Tests.TC_002_DoctorManagement_Specializations">
-        <test-method is-config="true" signature="copy()[pri:0, instance:com.Tests.TC_002_DoctorManagement_Specializations@1a18644]" started-at="2021-11-15T19:05:55 BDT" name="copy" finished-at="2021-11-15T19:05:55 BDT" duration-ms="26" status="PASS">
+    <test started-at="2021-11-29T19:31:49 BDT" name="Test13" finished-at="2021-11-29T19:32:39 BDT" duration-ms="49659">
+      <class name="com.Tests.TC007_GenericManagenent_Investigation_Types">
+        <test-method is-config="true" signature="copy()[pri:0, instance:com.Tests.TC007_GenericManagenent_Investigation_Types@6eda5c9]" started-at="2021-11-29T19:31:49 BDT" name="copy" finished-at="2021-11-29T19:31:49 BDT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- copy -->
-        <test-method is-config="true" signature="broswerConfig(java.lang.String)[pri:0, instance:com.Tests.TC_002_DoctorManagement_Specializations@1a18644]" started-at="2021-11-15T19:06:34 BDT" name="broswerConfig" finished-at="2021-11-15T19:06:35 BDT" duration-ms="1264" status="PASS">
+        <test-method is-config="true" signature="broswerConfig(java.lang.String)[pri:0, instance:com.Tests.TC007_GenericManagenent_Investigation_Types@6eda5c9]" started-at="2021-11-29T19:31:50 BDT" name="broswerConfig" finished-at="2021-11-29T19:31:52 BDT" duration-ms="2110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,19 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- broswerConfig -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.Tests.TC_002_DoctorManagement_Specializations@1a18644]" started-at="2021-11-15T19:06:35 BDT" name="login" finished-at="2021-11-15T19:06:39 BDT" duration-ms="3756" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.Tests.TC007_GenericManagenent_Investigation_Types@6eda5c9]" started-at="2021-11-29T19:31:52 BDT" name="login" finished-at="2021-11-29T19:31:54 BDT" duration-ms="2267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="Specializations()[pri:-1, instance:com.Tests.TC_002_DoctorManagement_Specializations@1a18644]" started-at="2021-11-15T19:06:39 BDT" name="Specializations" finished-at="2021-11-15T19:07:04 BDT" duration-ms="24600" status="PASS">
+        <test-method signature="Types()[pri:-1, instance:com.Tests.TC007_GenericManagenent_Investigation_Types@6eda5c9]" started-at="2021-11-29T19:31:54 BDT" name="Types" finished-at="2021-11-29T19:32:39 BDT" duration-ms="45060" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Specializations -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.Tests.TC_002_DoctorManagement_Specializations@1a18644]" started-at="2021-11-15T19:07:04 BDT" name="close" finished-at="2021-11-15T19:07:04 BDT" duration-ms="116" status="PASS">
+        </test-method> <!-- Types -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.Tests.TC007_GenericManagenent_Investigation_Types@6eda5c9]" started-at="2021-11-29T19:32:39 BDT" name="close" finished-at="2021-11-29T19:32:39 BDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.Tests.TC_002_DoctorManagement_Specializations -->
-    </test> <!-- Test5 -->
+      </class> <!-- com.Tests.TC007_GenericManagenent_Investigation_Types -->
+    </test> <!-- Test13 -->
   </suite> <!-- Suite -->
 </testng-results>
