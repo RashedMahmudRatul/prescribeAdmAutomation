@@ -9,7 +9,7 @@
 <!-- <test thread-count="2" name="Test1">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.Tests.LoginTest">
+			<class name="com.Tests.TC_000_Login">
 				<methods>
 					<include name="Login" />
 
@@ -19,7 +19,7 @@
 	</test>  -->
 	
 
-<!-- <test thread-count="2" name="Test2">
+<test thread-count="2" name="Test2">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC001_MedicalCenter_MedicalCenterTypes">
@@ -30,6 +30,7 @@
 			</class>
 		</classes>
 	</test>	
+	
 	
 	<test thread-count="2" name="Test4">
 		<parameter name="browser" value="chrome"></parameter>
@@ -56,22 +57,22 @@
 			</class>
 		</classes>
 	</test> 
-	 -->
 	
-	<!-- <test thread-count="2" name="Test6">
+	
+	<test thread-count="2" name="Test6">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC_003_DoctorManagement_Doctors">
 				<methods>
-					<include name="Doctor" />
+					<include name="Doctors" />
 
 				</methods>
 			</class>
 		</classes>
-	</test>  -->
+	</test> 
 
 	
-<!-- 		<test thread-count="2" name="Test7">
+		<test thread-count="2" name="Test7">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC001_GenericManagenent_Advice">
@@ -81,69 +82,69 @@
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test thread-count="2" name="Test8">
+	<test thread-count="2" name="Test8">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC002_GenericManagenent_Diagosis">
 				<methods>
-					<include name="DoctorTypes" />
+					<include name="Diagosis" />
 
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
 	
-	<!-- <test thread-count="2" name="Test9">
+	<test thread-count="2" name="Test9">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC003_GenericManagenent_Followups">
 				<methods>
-					<include name="DoctorTypes" />
+					<include name="Followups" />
 
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
 	
-	<!-- <test thread-count="2" name="Test10">
+	<test thread-count="2" name="Test10">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC004_GenericManagenent_Medicine">
 				<methods>
-					<include name="DoctorTypes" />
+					<include name="Medicine" />
 
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test thread-count="2" name="Test11">
+	<test thread-count="2" name="Test11">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC005_GenericManagenent_Symptom">
 				<methods>
-					<include name="DoctorTypes" />
+					<include name="Symptom" />
 
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test thread-count="2" name="Test12">
+	<test thread-count="2" name="Test12">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Tests.TC006_GenericManagenent_Investigation_PrimaryTypes">
 				<methods>
-					<include name="DoctorTypes" />
+					<include name="PrimaryTypes" />
 
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
 	
 <test thread-count="2" name="Test13">
@@ -156,8 +157,20 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> 
 	
+	
+<!-- 	<test thread-count="2" name="Test7">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Tests.TC006_GenericManagenent_Investigation_PrimaryTypes">
+				<methods>
+					<include name="PrimaryTypes" />
+
+				</methods>
+			</class>
+		</classes>
+	</test> -->
 	
 	
 </suite> <!-- Suite -->

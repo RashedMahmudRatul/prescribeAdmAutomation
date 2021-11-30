@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="com.Reports.Report"/>
   </listeners>
-  <test thread-count="5" name="Test13(failed)">
+  <test thread-count="5" name="Test1(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Tests.TC007_GenericManagenent_Investigation_Types">
+      <class name="com.Tests.TC_000_Login">
         <methods>
           <include name="close"/>
+          <include name="Login"/>
           <include name="login"/>
           <include name="copy"/>
-          <include name="Types"/>
           <include name="broswerConfig"/>
         </methods>
-      </class> <!-- com.Tests.TC007_GenericManagenent_Investigation_Types -->
+      </class> <!-- com.Tests.TC_000_Login -->
     </classes>
-  </test> <!-- Test13(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

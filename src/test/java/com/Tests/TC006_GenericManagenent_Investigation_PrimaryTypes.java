@@ -55,6 +55,7 @@ public class TC006_GenericManagenent_Investigation_PrimaryTypes extends BaseClas
 					name = cell.getStringCellValue();
 				}
 			}
+			driver.manage().window().maximize();
 			// go to PrimaryTypes page
 			driver.findElement(By.xpath(prop.getProperty("gmBtn"))).click();
 			driver.findElement(By.xpath(prop.getProperty("investigationsBtn"))).click();

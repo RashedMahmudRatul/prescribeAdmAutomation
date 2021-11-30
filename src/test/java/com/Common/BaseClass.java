@@ -68,7 +68,7 @@ public class BaseClass extends CopyPaste {
 	@AfterMethod
 		public void close() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			//driver.close();
+			driver.close();
 		}
 
 	public void readConfig() throws FileNotFoundException {

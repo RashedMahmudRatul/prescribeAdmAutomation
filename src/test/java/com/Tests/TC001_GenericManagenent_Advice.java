@@ -57,7 +57,7 @@ public class TC001_GenericManagenent_Advice extends BaseClass{
 				}
 			} 
 				// go to Advice page
-				driver.findElement(By.xpath(prop.getProperty("mcBtn"))).click();
+				driver.findElement(By.xpath(prop.getProperty("gmBtn"))).click();
 				Thread.sleep(100);
 				driver.findElement(By.xpath(prop.getProperty("adviceBtn"))).click();
 				// press on create Advice
